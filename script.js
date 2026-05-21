@@ -1,41 +1,40 @@
-const text = "Python Enthusiast | Web Developer";
+const text =
+"Python Enthusiast | Web Developer";
 
 let index = 0;
 
 function typeEffect() {
 
-    document.getElementById("typing").innerHTML =
-        text.slice(0, index);
+    document.getElementById("typing")
+    .innerHTML = text.slice(0,index);
 
     index++;
 
     if(index <= text.length) {
-        setTimeout(typeEffect, 100);
+
+        setTimeout(typeEffect,100);
     }
 }
 
 typeEffect();
 
 function darkMode() {
+
     document.body.classList.toggle("dark");
 }
+window.onscroll = function() {
 
-.dark {
-    background: #121212;
-    color: white;
-}
+    let scrollTop =
+    document.documentElement.scrollTop;
 
-.dark section {
-    background: #1e1e1e;
-}
+    let height =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
 
-.dark h2 {
-    color: white;
-}
+    let scrolled =
+    (scrollTop / height) * 100;
 
-function showMessage() {
-
-    alert(
-        "Hi! I am Sudheeksha's AI Assistant 👋"
-    );
-}
+    document.getElementById(
+    "progress-bar").style.width =
+    scrolled + "%";
+};

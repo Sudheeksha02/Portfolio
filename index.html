@@ -1,137 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Sudheeksha Portfolio</title>
+
     <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
+
+  <div id="progress-bar"></div>
 
     <header>
 
-    <img src="images/profile.jpg" alt="Profile Photo" class="profile-pic">
+        <img src="images/profile.jpg" class="profile-pic">
 
-    <h1>Sudheeksha Vydadi</h1>
+        <h1>Sudheeksha Vydadi</h1>
 
-    <p>
-        IT Student | Python Enthusiast | Web Developer
-        <span id="typing"></span>
-    </p>
+        <p>
+            IT Student |
+            <span id="typing"></span>
+        </p>
 
-    <button onclick="darkMode()" class="btn">
-        Dark Mode
-    </button>
+        <button onclick="darkMode()" class="btn">
+            Dark Mode
+        </button>
 
-<a href="resume.pdf" download class="btn">
-    Download Resume
-</a>
+        <a href="resume.pdf" target="_blank">
+            <button class="btn">
+                Download Resume
+            </button>
+        </a>
 
 <div class="social-links">
 
-    <a href="https://github.com/Sudheeksha02 /" target="_blank">GitHub</a>
+    <a href="mailto:sudheekshavydadi@gmail.com" target="_blank">
+        Email
+    </a>
 
-    <a href="www.linkedin.com/in/sudheeksha-vydadi-b75727293/" target="_blank">LinkedIn</a>
+    <a href="https://github.com/Sudheeksha02" target="_blank">
+        GitHub
+    </a>
 
-    <a href="https://leetcode.com/u/vydadisudheeksha/" target="_blank">LeetCode</a>
+    <a href="https://linkedin.com/in/sudheeksha-vydadi-b75727293" target="_blank">
+        LinkedIn
+    </a>
+
+    <a href="https://leetcode.com/u/vydadisudheeksha/" target="_blank">
+        LeetCode
+    </a>
 
 </div>
+
     </header>
 
-    <section class="about">
+    <section>
+
         <h2>About Me</h2>
+
         <p>
-            I am an Information Technology student passionate about Python,
-            web development, and problem solving.
+            Passionate IT student interested in
+            Python, Web Development and Creative Technologies.
         </p>
-    </section>
-
-    <section class="skills">
-
-    <h2>Skills</h2>
-
-    <p>Python</p>
-    <div class="bar">
-        <div class="python"></div>
-    </div>
-
-    <p>HTML/CSS</p>
-    <div class="bar">
-        <div class="html"></div>
-    </div>
 
     </section>
 
-    <section class="projects">
+    <section>
+
+        <h2>Skills</h2>
+
+        <div class="skills-container">
+
+            <div class="skill-card">
+                <h3>Python</h3>
+                <div class="circle">90%</div>
+            </div>
+
+            <div class="skill-card">
+                <h3>SQL</h3>
+                <div class="circle">80%</div>
+            </div>
+
+            <div class="skill-card">
+                <h3>HTML/CSS</h3>
+                <div class="circle">95%</div>
+            </div>
+
+            <div class="skill-card">
+                <h3>JavaScript</h3>
+                <div class="circle">70%</div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section>
+
         <h2>Projects</h2>
 
         <div class="project-card">
             <h3>QR Code Generator</h3>
-            <p>Built using HTML, CSS and JavaScript.</p>
+            <p>Dynamic QR Generator Website.</p>
         </div>
 
         <div class="project-card">
-            <h3>Login System Testing</h3>
-            <p>Python-based testing and bug analysis project.</p>
+            <h3>Portfolio Website</h3>
+            <p>Modern responsive portfolio design.</p>
         </div>
 
     </section>
 
-<section class="certificates">
+    <section>
+        <section class="certificates">
 
     <h2>Certificates</h2>
 
-    <div class="project-card">
-        <h3>Python Full Stack Developer</h3>
-        <p>Issued by APSCHE</p>
-    </div>
+    <ul>
 
-    <div class="project-card">
-        <h3>Power BI Masterclass</h3>
-        <p>Issued by TechAR Innovations</p>
-    </div>
+        <li>
+            <a href="#" target="_blank">
+                Power BI Masterclass
+            </a>
+        </li>
 
-    <div class="project-card">
-        <h3>Salesforce Agentforce Specialist</h3>
-        <p>Salesforce Certification</p>
-    </div>
+        <li>
+            <a href="#" target="_blank">
+                Python Full Stack Internship
+            </a>
+        </li>
+
+        <li>
+            <a href="#" target="_blank">
+                Salesforce Agentforce Specialist
+            </a>
+        </li>
+
+    </ul>
 
 </section>
+        </ul>
 
-    <section class="contact">
-        <h2>Contact</h2>
-        <p>Email: sudheekshavydadi@gmail.com</p>
     </section>
-
-    <script src="script.js"></script>
 
     <section class="contact-form">
 
-    <h2>Contact Me</h2>
+        <h2>Contact Me</h2>
 
-    <form>
+        <form action="https://formsubmit.co/sudheekshavydadi@gmail.com" method="POST">
 
-        <input type="text" placeholder="Your Name" required>
+            <input type="text" placeholder="Your Name">
 
-        <input type="email" placeholder="Your Email" required>
+            <input type="email" placeholder="Your Email">
 
-        <textarea placeholder="Your Message"></textarea>
+            <textarea placeholder="Your Message"></textarea>
 
-        <button type="submit" class="btn">
-            Send Message
-        </button>
+            <button type="submit" class="btn">
+                Send
+            </button>
 
-    </form>
+        </form>
 
-</section>
+    </section>
 
-<div class="chatbot">
+    <div class="chatbot">
 
-    <button onclick="showMessage()" class="btn">
-        AI Assistant
-    </button>
+        💬 Hi, I'm Sudheeksha's AI Assistant
 
-</div>
+    </div>
+
+    <script src="script.js"></script>
+
+  <div class="particles"></div>
 
 </body>
+
 </html>
