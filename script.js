@@ -1,3 +1,4 @@
+alert("JS Working");
 const text = "Python Enthusiast | Web Developer";
 
 let index = 0;
