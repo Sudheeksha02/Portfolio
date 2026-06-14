@@ -222,11 +222,9 @@ color:#E8F7F0;
 
 @media(max-width:768px){
 
-```
 header{
     padding:30px 15px;
 }
-
 .profile-pic{
     width:140px;
     height:140px;
@@ -264,7 +262,6 @@ section{
     width:90%;
     box-sizing:border-box;
 }
-```
 
 }
 
