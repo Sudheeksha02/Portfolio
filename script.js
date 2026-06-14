@@ -1,4 +1,3 @@
-alert("JS Working");
 const text = "Python Enthusiast | Web Developer";
 
 let index = 0;
@@ -36,3 +35,7 @@ window.onscroll = function () {
     document.getElementById("progress-bar")
         .style.width = scrolled + "%";
 };
+
+document.querySelector("form").addEventListener("submit", function () {
+    alert("Message sent successfully!");
+});
